@@ -1,35 +1,25 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 
-// const ButtonWrapper = styled.section`
-// background-color: #f9f9f9;
-// padding: 20px;
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// `;
 // The ButtonStyle component will render the button with thestyles below
 const ButtonStyle = styled.button`
-border-radius: 20px;
-background-color: #0F111C;
+background-color: transparent;
 color: #fff;
-padding: 9px 15px;
-font-size: 20px;
+border: none;
+margin-left: 0px;  
+font-size: 16px;
 outline: none;
 cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;E
   text-decoration: none;
+  
   /* Second Nav */
-//   margin-left: 24px;
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #808080;
-border: none;
+    background: transparent;
+    color: #D3D3D3;
 `;
-// The ButtonStyle component will render the button with thestyles below
-// Create an onlcick event inside ButtonProps
-//Is there a better way to do this?
+// Decorate the span so that it leaves no space
 interface ButtonProps {
     name: string
     onClick: () => void

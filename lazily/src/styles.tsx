@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+// Create blue page background color
+export const body = styled.body`
+    height 100vh;
+    background: 'blue';
+`;
+export const PageContainer = styled.div`
+    background-color: #57BAF2
+`;
 export const CardWrapper = styled.section`
 background-color: #f9f9f9;
 padding: 20px;
@@ -9,17 +17,16 @@ align-items: center;
 `;
 
 export const CardContainer = styled.section`
-    background-color: #f9f9f9;
-    padding: 20px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 50vw;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 25% auto;
-    
+background-color: #f9f9f9;
+padding: 20px;
+display: block;
+justify-content: center;
+align-items: center;
+height: 60vh;
+width: 50vw;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+border-radius: 15px;
+margin: 5% auto;
 `;
 export const FlexBox = styled.div`
 background-color: #fff;

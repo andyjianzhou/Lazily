@@ -16,6 +16,7 @@ import Button from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components
   const Navbar = () => {
     return (
       <>
+    
         <Nav>
           <Bars />
           <NavMenu>
@@ -28,26 +29,24 @@ import Button from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components
 
             </NavLink>
             <NavLink to='/events'>
-              <span style={{color: 'rgb(245,251,255)'}}>Events</span>
-            </NavLink>
-            <NavLink to='/annual'>
-              Annual Report
+              {/* <span style={{color: 'rgb(245,251,255)'}}>Events</span> */}
+              <Button name='Events' onClick={About}/>
             </NavLink>
             <NavLink to='/team'>
-              Teams
+              <Button name='Team' onClick={About}/>
             </NavLink>
             <NavLink to='/blogs'>
-              Blogs
+              <Button name='Contact' onClick={About}/>
             </NavLink>
-            <NavLink to='/sign-up'>
+            {/* <NavLink to='/sign-up'>
               Sign Up
-            </NavLink>
+            </NavLink> */}
             {/* Second Nav */}
             {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </Nav>
       </>
     );
