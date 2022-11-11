@@ -1,8 +1,8 @@
 //Create a beautiful card component in typescript
 
-import React, {FC} from 'react';
+import React, {FC, ReactNode} from 'react';
 import styled from 'styled-components';
-import { CardContainer, CardWrapper, CardTitle } from '../../styles';
+import { CardContainer, CardWrapper, CardTitle, CardBody } from '../../styles';
 
 // Make a white flex box with shadow
 // Make it to the middle of the screen
@@ -11,14 +11,21 @@ import { CardContainer, CardWrapper, CardTitle } from '../../styles';
 interface CardProps {
     title: string
     description?: string
+    children?: ReactNode
     image?: string
 }
-const Card: FC<CardProps> = ({title, description, image}) => {
+const Card: FC<CardProps> = ({title, children, description, image}) => {
     return (
         <>
         <CardContainer>
             <CardWrapper>
-                <CardTitle>{title}</CardTitle>
+                <div>
+                    <CardTitle>{title}</CardTitle>
+                    {description && <p>{description}</p>}
+                </div>
+                <div>
+                    {children}
+                </div>
             </CardWrapper>
         </CardContainer>
         </>

@@ -49,3 +49,6 @@ export const CardText = styled.p`
 font-size: 16px;
 font-weight: 400;
 `;
+export const CardBody = styled.div`
+padding: 20px;
+`;
