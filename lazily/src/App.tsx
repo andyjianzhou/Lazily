@@ -7,12 +7,11 @@ import Card from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/U
 import Home from './pages/home';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     //Make the default landing page home
     <>
-    <body>
-
+    <div className = "App">
       <Router>
         <Navbar/>
         <Routes>
@@ -21,7 +20,7 @@ function App() {
           <Route path="/about" element={<About />} /> 
         </Routes>
       </Router>
-    </body>
+    </div>
     </>
   );
 }

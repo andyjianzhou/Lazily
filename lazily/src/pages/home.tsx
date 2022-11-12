@@ -7,11 +7,14 @@ const Home = () => {
     const target = "https://www.youtube.com/watch?v=1Q8fG0TtVAY"
     return (
         <>
-
-        <Card title="Home" description="This is the home page" children={
-                <TextField title="Hello" placeholder="Email address..."/>
+        <div>
+            <Card title="Home" description="This is the home page" children={
+                <div>
+                    <TextField title="Hello" placeholder="Email address..."/>
+                </div>
                 }
-            />
+                />
+        </div>
         </>
     )
 

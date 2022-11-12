@@ -1,9 +1,11 @@
-body{
+/* body{
   height: 100vh;
   background: #57BAF2
-}
+} */
 .App {
   text-align: center;
+  height: 100vh;
+  background: #57BAF2
 }
 
 .App-logo {
@@ -31,7 +33,9 @@ body{
 .App-link {
   color: #61dafb;
 }
-
+.text-left{
+  text-align: left;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
