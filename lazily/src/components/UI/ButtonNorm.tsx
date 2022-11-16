@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 // The ButtonStyle component will render the button with thestyles below
 const ButtonStyle = styled.button`
-background-color: transparent;
+background-color: #FFFF00;
 color: #fff;
 border: none;
 margin-left: 0px;  
 font-size: 16px;
-outline: none;
+padding: ;
 cursor: pointer;
   transition: all 0.2s ease-in-out;E
   text-decoration: none;
@@ -25,7 +25,7 @@ interface ButtonProps {
     onClick?: () => void
     style?: string
 }
-const Button: FC<ButtonProps> = ({ name, onClick, style}) => {
+const ButtonNorm: FC<ButtonProps> = ({ name, onClick, style}) => {
     return (
         <>
             <span style = {{color: style}}>
@@ -34,4 +34,4 @@ const Button: FC<ButtonProps> = ({ name, onClick, style}) => {
         </>
     );
 };
-export default Button;
+export default ButtonNorm;

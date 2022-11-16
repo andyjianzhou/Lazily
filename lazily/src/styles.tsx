@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 // Create blue page background color
 export const body = styled.body`
-    height 100vh;
     background: 'blue';
 `;
 export const PageContainer = styled.div`

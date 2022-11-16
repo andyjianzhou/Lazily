@@ -7,8 +7,8 @@ import Home from '../../pages/home';
 import {
     Nav,
     NavLink,
-    Bars,
-    NavMenu,
+    faBars,
+    NavbarContainer,
     NavBtn,
     NavBtnLink,
   } from './NavbarElements';
@@ -16,10 +16,8 @@ import Button from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components
   const Navbar = () => {
     return (
       <>
-    
         <Nav>
-          <Bars />
-          <NavMenu>
+          <NavbarContainer>
             <NavLink to='/home'>
               <Button name='Home' onClick={Home}/>
             </NavLink>
@@ -43,7 +41,7 @@ import Button from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components
             </NavLink> */}
             {/* Second Nav */}
             {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-          </NavMenu>
+          </NavbarContainer>
           {/* <NavBtn>
             <NavBtnLink to='/signin'>Sign In</NavBtnLink>
           </NavBtn> */}

@@ -1,7 +1,15 @@
-/* body{
-  height: 100vh;
-  background: #57BAF2
-} */
+body{
+  font-family: 'Verdana', sans-serif;
+  color: rgb(89, 85, 85)
+}
+.form-group{
+  margin-bottom: 1rem;
+}
+.submit-Btn{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.7rem;
+}
 .App {
   text-align: center;
   height: 100vh;
