@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-
-import Button from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/UI/Button';
 import 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/styles.css'
 
 //Rest API
@@ -9,9 +7,10 @@ import Axios from 'axios';
 interface TextFieldProps {
     title: string
     placeholder: string
+    button?: React.ReactNode
 }
 
-const TextField: React.FC<TextFieldProps> = ({title, placeholder}) => {
+const TextField: React.FC<TextFieldProps> = ({title, placeholder, button}) => {
 
     const [inputFields, setInputFields] = useState([
         {email: ''}
@@ -25,13 +24,16 @@ const TextField: React.FC<TextFieldProps> = ({title, placeholder}) => {
 
     function submitHandler(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
-        Axios.post('http://localhost:3001/api/email', inputFields)
-        .then((response) => {
-            console.log(response);
-        })
-        .catch ((error) => {
-            console.log(error);
-        })
+        Axios.post('http://127.0.0.1:8080/api/emails/', {
+            method: 'POST',
+            params: {
+                email: inputFields[0].email,
+            }
+            }).then(response => {
+                console.log(response.data.created_at);
+            }).catch(error => {
+                console.log(error.response.data);
+            })
     }
     return (
         <>
