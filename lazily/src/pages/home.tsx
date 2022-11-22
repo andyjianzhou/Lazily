@@ -10,7 +10,16 @@ const Home = () => {
         <div>
             <Card title="Home" description="This is the home page" children={
                 <div className="p-5">
-                    <TextField title="Hello" placeholder="Email address..."/>
+                    <TextField title="Hello" placeholder="Email address..." button=
+                    {
+                        <button
+                            className = "submit-Btn"
+                            type="submit"
+                        >
+                            Submit
+                        </button>
+                    }
+                    />
                 </div>
                 }
                 />

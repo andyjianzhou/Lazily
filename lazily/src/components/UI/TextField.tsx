@@ -53,12 +53,7 @@ const TextField: React.FC<TextFieldProps> = ({title, placeholder, button}) => {
                             autoComplete = "off"
                             required
                         />
-                        <button
-                            className = "submit-Btn"
-                            type="submit"
-                            >
-                                Submit
-                        </button>
+                        {button}
                     </div>
                 )
                 })}
