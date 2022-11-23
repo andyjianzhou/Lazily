@@ -47,8 +47,8 @@ const Form: React.FC<FormProps> = ({title, placeholder, button}) => {
                             <TextField
                                 placeholder={placeholder} 
                                 value={input.email} 
-                                onChange={event=> {handleChangeForm(index, event)}}/>
-                                {button}
+                                onChange={event=> {handleChangeForm(index, event)}}
+                                button = {button}/>
                         </div>
                     )
                 })}
