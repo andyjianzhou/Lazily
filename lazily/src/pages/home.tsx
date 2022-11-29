@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
         <div>
-            <Card title="Home" description="This is the home page" children={
+            <Card title="Home" description="This is the home page">
                 <div className="p-5">
                     {
                     <Form title="Hello" 
@@ -26,9 +26,11 @@ const Home = () => {
                         Submit
                     </button>}/>
                     }
-                
+                    <div>
+                        Testing
+                        </div>
                 </div>
-            }/>
+            </Card>
         </div>
         </>
     )
