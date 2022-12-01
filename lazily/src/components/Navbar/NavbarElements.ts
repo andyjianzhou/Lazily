@@ -21,7 +21,9 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-left: 26px;
+  // Adjust margin-left on navbar to fit all screen size
+  margin-left: 26px;  
+  position: relative;
   height: 100%;
   cursor: pointer;
   &.active {
@@ -46,9 +48,18 @@ export const faBars = styled(FaBars)`
 export const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
-  //allign buttons to the left side of the screen
-  margin-left: 53%;
+  // Align texts on navbar to left side
+  justify-content: flex-start;
+  height: 100%;
+  z-index: 1;
+  margin-left: 600px;
+  @media screen and (max-width: 768px) {
+    // display: none;
+    margin-left: 240px;
+  }
 `;
+//   // margin-left: 600px;
+// `;
   
 export const NavBtn = styled.nav`
   display: flex;
