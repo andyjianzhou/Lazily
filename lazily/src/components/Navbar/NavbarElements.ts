@@ -52,10 +52,15 @@ export const NavbarContainer = styled.div`
   justify-content: flex-start;
   height: 100%;
   z-index: 1;
-  margin-left: 600px;
+  @media all and (max-width: 1900px) and (min-width: 800px) {
+    margin-left: 800px;
+  }
+  @media screen and (max-width: 1600px) {
+    margin-left: 500px;
+  }
   @media screen and (max-width: 768px) {
     // display: none;
-    margin-left: 240px;
+    margin-left: 100px;
   }
 `;
 //   // margin-left: 600px;
