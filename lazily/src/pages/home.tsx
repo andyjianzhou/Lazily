@@ -4,13 +4,6 @@ import Card from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/U
 import Form from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/Form'
 // Learn how to make forms then feed it to python django backend
 const Home = () => {
-    // <TextField title="Hello" placeholder="Email address..." button={<button
-    //     className="submit-Btn"
-    //     type="submit"
-    // >
-    //     Submit
-    // </button>}/>
-
     return (
         <>
         <div>
@@ -34,7 +27,6 @@ const Home = () => {
         </div>
         </>
     )
-
 }
 
 export default Home;
