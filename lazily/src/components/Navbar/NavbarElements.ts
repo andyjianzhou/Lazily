@@ -1,10 +1,11 @@
 import { FaBars } from 'react-icons/fa';
-import { NavLink as Link } from 'react-router-dom';
+import { NavLink as LinkR } from 'react-router-dom';
+import {Link as LinkS} from 'react-scroll';
 import styled from 'styled-components';
 
 // Add shadow on navbar
 export const Nav = styled.nav`
-  background: rgba(109, 217, 255, 0.4);
+  background: transparent;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +17,7 @@ export const Nav = styled.nav`
 // .main-navigation {
 //   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 // }
-export const NavLink = styled(Link)`
+export const NavLink = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
@@ -27,7 +28,7 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #000000;
+    border-bottom: 3px solid #01bf71;
   }
 `;
   
@@ -63,8 +64,6 @@ export const NavbarContainer = styled.div`
     margin-left: 100px;
   }
 `;
-//   // margin-left: 600px;
-// `;
   
 export const NavBtn = styled.nav`
   display: flex;
@@ -78,7 +77,7 @@ export const NavBtn = styled.nav`
   }
 `;
   
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(LinkR)`
   border-radius: 4px;
   background: #808080;
   padding: 10px 22px;

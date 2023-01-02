@@ -6,7 +6,7 @@ import Form from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/F
 const Home = () => {
     return (
         <>
-        <div>
+        <div id="home">
             <Card title="Home" description="This is the home page">
                 <div className="p-5">
                     {

@@ -4,6 +4,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import About from '../About/about';
 import Home from '../Home/home';
+// import App.css in src
+// import App.css from src
+import '../../App.css';
 import {
     Nav,
     NavLink,
@@ -17,23 +20,23 @@ import Button from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components
     return (
       <>
         <Nav>
-          <NavbarContainer>
-            <NavLink to='/home'>
+          <NavbarContainer> 
+            {/* Create logo text */}
+            <NavLink to='home'>
               <Button name='Home' onClick={Home}/>
+              {/* <Home/> */}
             </NavLink>
-            <NavLink to='/about'>
-              {/* {Wrap link around custom button I made} */}
+            <NavLink to='about'>
               <Button name='About' onClick={About}/>
-
             </NavLink>
-            <NavLink to='/events'>
+            <NavLink to='events'>
               {/* <span style={{color: 'rgb(245,251,255)'}}>Events</span> */}
               <Button name='Events' onClick={About}/>
             </NavLink>
-            <NavLink to='/team'>
+            <NavLink to='team'>
               <Button name='Team' onClick={About}/>
             </NavLink>
-            <NavLink to='/blogs'>
+            <NavLink to=' blogs'>
               <Button name='Contact' onClick={About}/>
             </NavLink>
             {/* <NavLink to='/sign-up'>

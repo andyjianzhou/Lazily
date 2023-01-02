@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/UI/Button';
 const About = () => {
     return (
-        <div>
+        <div id="about">
             <h1>About</h1>
             <Button name="Test me" onClick={About}/>
         </div>

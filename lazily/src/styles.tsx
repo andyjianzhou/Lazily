@@ -11,8 +11,8 @@ export const CardWrapper = styled.section`
 background-color: #f9f9f9;
 padding: 20px;
 display: block;
-justify-content: center;
-align-items: center;    
+justify-content: center;    
+text-align: center;
 `;
 
 export const CardContainer = styled.section`
@@ -44,6 +44,7 @@ export const CardTitle = styled.h2`
 font-size: 20px;
 font-weight: 700;
 `;
+
 export const CardText = styled.p`
 font-size: 16px;
 font-weight: 400;

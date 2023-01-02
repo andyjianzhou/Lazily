@@ -1,11 +1,10 @@
 import React from 'react';
-import './styles.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 import Card from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/UI/Card'; //Make this dynamic
 import HomePage from './pages/homeMain';
-
 
 const App: React.FC = () => {
   return (
@@ -13,7 +12,11 @@ const App: React.FC = () => {
     <>
     {/* Route this to pages */}
     <div className = "App">
-      <HomePage/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+        </Routes>
+      </Router>
     </div>
     </>
   );
