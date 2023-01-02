@@ -2,8 +2,8 @@
 // Add custom styling to navbar
 import React from 'react';
 import {Link} from 'react-router-dom';
-import About from '../../pages/about';
-import Home from '../../pages/home';
+import About from '../About/about';
+import Home from '../Home/home';
 import {
     Nav,
     NavLink,
