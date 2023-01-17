@@ -4,6 +4,10 @@ import Card from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/U
 import Form from 'C:/Users/YOLO4/OneDrive/Desktop/Lazily/lazily/src/components/Form'
 // Learn how to make forms then feed it to python django backend
 const Home = () => {
+    // retrieve data from backend and display it by console.log it
+    
+
+
     return (
         <>
         <div id="home">
@@ -25,6 +29,7 @@ const Home = () => {
                         </div>
                 </div>
             </Card>
+            
         </div>
         </>
     )
